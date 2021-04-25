@@ -1,0 +1,177 @@
+@import "vars"
+
+//.sidebar
+.sidebar
+  box-shadow: 0px 4px 4px rgba(204, 163, 101, 0.05)
+  background: #fff
+  width: 100%
+  border-radius: 20px
+  margin: 0 0 30px
+
+.sidebar-header
+  padding: 20px 20px 24px
+  border-bottom: 1px solid #E3E3E3
+  width: 100%
+
+.info-user
+  color: #5B5B5B
+  width: 100%
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    margin: 0 0 16px
+  .btn
+    margin: 16px auto 0
+    width: 100%
+
+
+.info-user__ava
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 40px
+  height: 40px
+  min-width: 40px
+  background: #C4C4C4
+  margin: 0 6px 0 0
+
+.user-name
+  font-weight: 500
+
+.list-info-characteristics
+  width: 100%
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 8px
+    &:last-child
+      margin: 0
+    .info-btn
+      margin: 0 0 0 auto
+
+.sidebar-body
+  padding: 20px
+  width: 100%
+
+.sidebar-menu
+  width: 100%
+  li
+    display: flex
+    align-items: center
+    width: 100%
+    margin: 0 0 22.5px
+    &:last-child
+      margin: 0
+    a
+      color: #434343
+      display: flex
+      align-items: center
+      &:hover
+        color: $accent
+
+.sidebar-menu__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  min-width: 24px
+  fill: $accent
+  margin: 0 6px 0 0
+
+.sidebar-footer
+  padding: 23px 20px
+  border-top: 1px solid #E3E3E3
+
+.sorting-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+  font-size: 14px
+  margin: 0 0 20px
+  p
+    font-weight: 500
+    color: #434343
+    margin: 0 0 4px
+
+
+.list-sorting
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 0 29px
+  color: rgba(0, 6, 146, 0.7)
+
+  li
+    margin: 0 20px 4px 0
+    padding: 4px 12px
+    border: 1px solid transparent
+      radius: 20px
+    cursor: pointer
+    transition: .3s ease
+    &:hover
+      color: $accent
+    &:last-child
+      margin: 0 0 4px
+  .active
+    border: 1px solid #4D51B2
+
+
+//card-news
+.card-news
+  height: 100%
+  width: 100%
+  background: #fff
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.07)
+  &__img
+    width: 100%
+    height: 181px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 16px 24px
+  &__name
+    color: #434343
+    letter-spacing: -0.005em
+    font-size: 18px
+    font-weight: bold
+    &:hover
+      color: $accent
+  .box-text
+    p
+      margin: 12px 0 0
+    i
+      color: rgba(67, 67, 67, 0.8)
+    strong
+      font-weight: 500
+
+.card-news__info
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 9px 0 0
+  font-size: 14px
+  .svg-icon
+    width: 11px
+    height: 11px
+    min-width: 11px
+    margin: 0 3px 0 0
+    fill: rgba(67, 67, 67, 0.5)
+  li
+    display: flex
+    align-items: center
+    color: rgba(67, 67, 67, 0.5)

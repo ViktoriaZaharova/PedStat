@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="KZ">
+
+<head>
+  <meta charset="utf-8">
+  <title>PedStart</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="navbar-nav menu">
+    <li class="nav-item">
+      <a class="nav-link" href="#">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#home"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Олимпиада</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Турнир</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Пробный</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Курс</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Вебинар</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Блог</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Форум</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Сервисы</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Маркет</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Жаңалықтар</a>
+    </li>
+  </ul>
+</div>
+
+<header>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="col-9 d-flex flex-wrap align-items-center">
+
+          <div class="nav-item nav-item-language dropdown">
+            <a class="nav-link nav-link-lang dropdown-toggle" href="#" id="languageDropdown" role="button"
+               data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              <svg class="svg-icon location-icon">
+                <use xlink:href="img/sprite.svg#globe"></use>
+              </svg>
+              Қазақша
+            </a>
+            <div class="dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item language-item active" href="#"><span class="language-item__icon"><img
+                  src="img/kz.png"
+                  alt=""></span><span class="language-item__text">Қазақша</span></a>
+              <a class="dropdown-item language-item" href="#"><span class="language-item__icon"><img src="img/rus.png"
+                                                                                                     alt=""></span><span
+                  class="language-item__text">Русский</span></a>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-accent btn-cabinet">
+            <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#user2"></use></svg></span>
+            <span class="btn-text">Жеке кабинет</span>
+          </a>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-center d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="navbar-nav menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#home"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Олимпиада</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Турнир</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Пробный</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Курс</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Вебинар</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Форум</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Сервисы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Маркет</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Жаңалықтар</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="banner-name">Баннер</h2>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <div class="sidebar">
+          <div class="sidebar-header">
+            <div class="info-user">
+              <div class="info-user__head">
+                <div class="info-user__ava"></div>
+                <div class="user-name">Елдос</div>
+              </div>
+              <ul class="list-info-characteristics">
+                <li><strong>ID номер: 123456</strong></li>
+                <li><p>Баланс: <strong>10000 тг</strong></p></li>
+                <li>
+                  <p>PedCoin: <strong class="color-accent balance-val">670 <img src="img/badge.svg" alt=""></strong>
+                  </p>
+                  <a href="#" class="info-btn" title="Tooltip on right" data-toggle="tooltip" data-placement="bottom">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#info"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-accent">Баланс толтыру</a>
+            </div>
+          </div>
+
+          <div class="sidebar-body">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#">
+                <span class="sidebar-menu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#user"></use></svg></span>
+                  <span class="sidebar-menu__text">Жеке кабинет</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <span class="sidebar-menu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#badge"></use></svg></span>
+                  <span class="sidebar-menu__text">Менің олимпиадаларым</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <span class="sidebar-menu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#medal"></use></svg></span>
+                  <span class="sidebar-menu__text">Менің туринирларым</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <span class="sidebar-menu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#online-course"></use></svg></span>
+                  <span class="sidebar-menu__text">Менің курстарым</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                <span class="sidebar-menu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#online-webinar"></use></svg></span>
+                  <span class="sidebar-menu__text">Менің вебинарларым</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="sidebar-footer">
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#">
+                <span class="sidebar-menu__icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#logout"></use></svg></span>
+                  <span class="sidebar-menu__text">Сайттан шығу</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-9">
+        <div class="wrapper-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h1>Курстар</h1>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12">
+                <div class="sorting-wrapper">
+                  <p>Сортировать: </p>
+                  <ul class="list-sorting">
+                    <li>по дате создания</li>
+                    <li>по просмотрам</li>
+                    <li class="active">по актуальным</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 mb-24">
+                <div class="card-news card-course">
+                  <a href="#" class="card-news__img">
+                    <span class="card-label bg-green course-status">Бестселлер</span>
+                    <img src="img/course1.jpeg" alt="">
+                    <span class="card-label bg-red course-sale">Жеңілдік -10%</span>
+                  </a>
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__name">ВБілім беру ұйымдарының
+                      басшыларына</a>
+                    <div class="box-text">
+                      <p>Біліктілікті арттыру (72 сағат)</p>
+                      <p><strong>Спикер:</strong> <i>Ахметова Диана</i></p>
+                      <p class="color-accent date-course">Шыққан күні: 29.11.20</p>
+                    </div>
+
+                  </div>
+
+                  <a href="#" class="btn btn-accent">Бағасы: 5600 тг</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-24">
+                <div class="card-news card-course">
+                  <a href="#" class="card-news__img">
+                    <img src="img/course2.jpeg" alt="">
+                  </a>
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__name">ВБілім беру ұйымдарының
+                      басшыларына</a>
+                    <div class="box-text">
+                      <p>Біліктілікті арттыру (72 сағат)</p>
+                      <p><strong>Спикер:</strong> <i>Ахметова Диана</i></p>
+                      <p class="color-accent date-course">Шыққан күні: 29.11.20</p>
+                    </div>
+
+                  </div>
+
+                  <a href="#" class="btn btn-accent">Бағасы: 5600 тг</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-24">
+                <div class="card-news card-course">
+                  <a href="#" class="card-news__img">
+                    <img src="img/course2.jpeg" alt="">
+                  </a>
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__name">ВБілім беру ұйымдарының
+                      басшыларына</a>
+                    <div class="box-text">
+                      <p>Біліктілікті арттыру (72 сағат)</p>
+                      <p><strong>Спикер:</strong> <i>Ахметова Диана</i></p>
+                      <p class="color-accent date-course">Шыққан күні: 29.11.20</p>
+                    </div>
+
+                  </div>
+
+                  <a href="#" class="btn btn-accent">Бағасы: 5600 тг</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-24">
+                <div class="card-news card-course">
+                  <a href="#" class="card-news__img">
+                    <span class="card-label bg-green course-status">Бестселлер</span>
+                    <img src="img/course1.jpeg" alt="">
+                    <span class="card-label bg-red course-sale">Жеңілдік -10%</span>
+                  </a>
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__name">ВБілім беру ұйымдарының
+                      басшыларына</a>
+                    <div class="box-text">
+                      <p>Біліктілікті арттыру (72 сағат)</p>
+                      <p><strong>Спикер:</strong> <i>Ахметова Диана</i></p>
+                      <p class="color-accent date-course">Шыққан күні: 29.11.20</p>
+                    </div>
+
+                  </div>
+
+                  <a href="#" class="btn btn-accent">Бағасы: 5600 тг</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-24">
+                <div class="card-news card-course">
+                  <a href="#" class="card-news__img">
+                    <span class="card-label bg-green course-status">Бестселлер</span>
+                    <img src="img/course1.jpeg" alt="">
+                    <span class="card-label bg-red course-sale">Жеңілдік -10%</span>
+                  </a>
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__name">ВБілім беру ұйымдарының
+                      басшыларына</a>
+                    <div class="box-text">
+                      <p>Біліктілікті арттыру (72 сағат)</p>
+                      <p><strong>Спикер:</strong> <i>Ахметова Диана</i></p>
+                      <p class="color-accent date-course">Шыққан күні: 29.11.20</p>
+                    </div>
+
+                  </div>
+
+                  <a href="#" class="btn btn-accent">Бағасы: 5600 тг</a>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 mb-24">
+                <div class="card-news card-course">
+                  <a href="#" class="card-news__img">
+                    <img src="img/course2.jpeg" alt="">
+                  </a>
+                  <div class="card-news__body">
+                    <a href="#" class="card-news__name">ВБілім беру ұйымдарының
+                      басшыларына</a>
+                    <div class="box-text">
+                      <p>Біліктілікті арттыру (72 сағат)</p>
+                      <p><strong>Спикер:</strong> <i>Ахметова Диана</i></p>
+                      <p class="color-accent date-course">Шыққан күні: 29.11.20</p>
+                    </div>
+
+                  </div>
+
+                  <a href="#" class="btn btn-accent">Бағасы: 5600 тг</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-5">
+          <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+          <div class="box-text">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s.</p>
+          </div>
+          <ul class="list-social">
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="#">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-7">
+          <div class="footer-wrapper">
+            <div class="footer-box">
+              <h3>Бөлімдер</h3>
+              <ul class="footer-menu">
+                <li><a href="#">Олимпиада</a></li>
+                <li><a href="#">Турнир</a></li>
+                <li><a href="#">Пробный</a></li>
+                <li><a href="#">Курс</a></li>
+                <li><a href="#">Вебинар</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h3>Бөлімдер</h3>
+              <ul class="footer-menu">
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Форум</a></li>
+                <li><a href="#">Маркет</a></li>
+                <li><a href="#">Жаңалықтар</a></li>
+              </ul>
+            </div>
+            <div class="footer-box">
+              <h3>Сервистар</h3>
+              <ul class="footer-menu">
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Портфолио</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="copyright">Все права защищены 2021.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+@import "vars"
+
+header
+  margin: 0 0 16px
+
+
+.header-center
+  margin: 24px 0
+
+.menu
+  width: 100%
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  background: #fff
+  box-shadow: 0px 4px 4px rgba(204, 163, 101, 0.07)
+  border-radius: 50px
+  padding: 18px 32px
+  font-size: 16px
+  font-weight: bold
+  li
+    a
+      color: #5B5B5B
+      letter-spacing: -0.005em
+      &:hover
+        color: $accent
+        .svg-icon
+          fill: $accent
+    .svg-icon
+      width: 24px
+      height: 24px
+      fill: #5B5B5B
+    .active
+      color: $accent
+      .svg-icon
+        fill: $accent
+
+
+.header-top
+  padding: 9px 0
+  background: #fff
+  box-shadow: 0px 4px 4px rgba(204, 163, 101, 0.05)
+
+.nav-link-lang
+  color: #5B5B5B
+  font-size: 14px
+  display: flex
+  align-items: center
+
+.nav-item-language
+  margin: 0 24px 0 auto
+
+.location-icon
+  margin: 0 6px 0 0
+  width: 18px
+  height: 18px
+  min-height: 18px
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #5B5B5B
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: flex-end
+  justify-content: space-between
+  width: 20px
+  height: 14px
+  cursor: pointer
+  margin: 0 0 0 10px
+  span
+    display: block
+    width: 100%
+    height: 2px
+    background: $accent
+    border-radius: 2px
+
