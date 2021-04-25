@@ -139,10 +139,23 @@
     li
       margin: 0 auto
 
+  .notification-text
+    display: none
+
+  .notification-val
+    margin: 0
+
+  .notification
+    margin: 0 10px 0 auto
+
+  .nav-item-language
+    margin-right: 10px
+
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 576px)
   header
     .btn-cabinet
+      padding: 5px 10px
       .btn-text
         display: none
       .btn-icon
@@ -156,13 +169,22 @@
   .nav-item-language
     margin: 0 10px 0 auto
 
+@media only screen and (max-width: 480px)
+  .nav-link-lang
+    font-size: 12px
+
+  .notification-icon
+    width: 20px
+    height: 20px
+    min-width: 20px
+
   .footer-menu
     font-size: 14px
 
   .card-course .btn
     font-size: 16px
 
-  .card-webinar .card-news__img
+  .card-webinar .card-news__img, .card-my-course .card-news__img
     height: 180px
 
   h2

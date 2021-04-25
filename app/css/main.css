@@ -391,6 +391,9 @@ h3 {
 .color-violet {
   color: #9A318C; }
 
+.color-green {
+  color: #2DDC5E; }
+
 .bg-red {
   background: #FF5136; }
 
@@ -433,6 +436,9 @@ h3 {
 
 i {
   font-style: italic; }
+
+.font-medium {
+  font-weight: 500; }
 
 .wrapper-content {
   background: #fff;
@@ -715,6 +721,39 @@ header {
     height: 2px;
     background: #F1A431;
     border-radius: 2px; }
+
+.notification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 24px 0 auto;
+  letter-spacing: -0.005em;
+  font-size: 14px;
+  color: #F1A431; }
+  .notification + .nav-item-language {
+    margin-left: 0; }
+
+.notification-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 0 4px 0 0; }
+
+.notification-val {
+  color: #C4C4C4;
+  margin: 0 0 0 4px; }
 
 footer {
   background: #F1A431;
@@ -1524,6 +1563,16 @@ footer {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.card-my-course {
+  border-radius: 20px; }
+  .card-my-course .btn {
+    width: 100%;
+    padding: 13px;
+    margin: 16px auto 0; }
+  .card-my-course .card-news__img {
+    height: 212px;
+    border-radius: 20px; }
+
 .card-article {
   width: 100%;
   height: 100%;
@@ -1933,25 +1982,43 @@ footer {
     width: 100%;
     margin: 10px 0 0; }
     .forum-item__body .list-characteristics li {
-      margin: 0 auto; } }
+      margin: 0 auto; }
+  .notification-text {
+    display: none; }
+  .notification-val {
+    margin: 0; }
+  .notification {
+    margin: 0 10px 0 auto; }
+  .nav-item-language {
+    margin-right: 10px; } }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  header .btn-cabinet .btn-text {
-    display: none; }
-  header .btn-cabinet .btn-icon {
-    margin: 0; }
+@media only screen and (max-width: 576px) {
+  header .btn-cabinet {
+    padding: 5px 10px; }
+    header .btn-cabinet .btn-text {
+      display: none; }
+    header .btn-cabinet .btn-icon {
+      margin: 0; }
   .location-icon {
     width: 14px;
     height: 14px;
     min-width: 14px; }
   .nav-item-language {
-    margin: 0 10px 0 auto; }
+    margin: 0 10px 0 auto; } }
+
+@media only screen and (max-width: 480px) {
+  .nav-link-lang {
+    font-size: 12px; }
+  .notification-icon {
+    width: 20px;
+    height: 20px;
+    min-width: 20px; }
   .footer-menu {
     font-size: 14px; }
   .card-course .btn {
     font-size: 16px; }
-  .card-webinar .card-news__img {
+  .card-webinar .card-news__img, .card-my-course .card-news__img {
     height: 180px; }
   h2 {
     font-size: 24px; }
