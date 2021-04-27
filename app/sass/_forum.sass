@@ -185,6 +185,93 @@
     max-width: 207px
     width: 100%
 
+.form-commentary
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: calc(100% - 72px)
+  label
+    max-width: 525px
+    width: 100%
+  button
+    height: 40px
+    margin: 0 0 0 12px
+    max-width: 152px
+    width: 100%
+
+.commentary-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 24px
+
+.tooltip-wrapper
+  position: relative
+  width: fit-content
+  height: 40px
+  display: flex
+  align-items: center
+  padding: 10px 11px
+  border: 1px solid $accent
+    radius: 50px
+  font-size: 16px
+  font-weight: bold
+  letter-spacing: -0.06em
+  &:hover
+    .tooltip-box
+      opacity: 1
+
+.ball-value
+  display: flex
+  align-items: center
+  color: $accent
+  img
+    margin: 0 0 0 3px
+
+.tooltip-box
+  position: absolute
+  left: 50%
+  top: 100%
+  margin: 5px auto 0
+  transform: translate(-50%,0)
+  background: #fff
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15)
+  border-radius: 10px
+  padding: 16px
+  font-size: 14px
+  font-weight: 500
+  min-width: 281px
+  opacity: 0
+  z-index: 1
+  transition: .3s ease
+  &:before
+    content: ''
+    width: 0
+    height: 0
+    position: absolute
+    border-left: 11px solid transparent
+    border-right: 11px solid transparent
+    border-bottom: 12px solid #fff
+    top: -12px
+    left: 50%
+    transform: translate(-50%,0)
+
+.links-accent
+  color: $accent
+  display: flex
+  align-items: center
+  font-weight: normal
+  font-size: 12px
+  margin: 12px 0 0
+  &-icon
+    width: 13px
+    height: 7px
+    fill: $accent
+    margin: 0 0 0 8px
+    display: flex
+    align-items: center
+    justify-content: center
 
 
 
