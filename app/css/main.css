@@ -1961,13 +1961,15 @@ footer {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: calc(100% - 72px); }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: calc(100% - 72px);
+  margin: 0 auto 0 0; }
   .form-commentary label {
-    max-width: 525px;
-    width: 100%; }
+    width: calc(100% - 164px); }
   .form-commentary button {
     height: 40px;
-    margin: 0 0 0 12px;
     max-width: 152px;
     width: 100%; }
 
@@ -2072,6 +2074,115 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
+.rating-commentary {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .rating-commentary .rating-val {
+    margin: 0 10px; }
+
+.list-commentary {
+  width: 100%; }
+  .list-commentary > li {
+    margin: 0 0 24px; }
+    .list-commentary > li:last-child {
+      margin: 0; }
+      .list-commentary > li:last-child:before {
+        display: none; }
+  .list-commentary .list-commentary-item {
+    width: 100%; }
+  .list-commentary ul {
+    padding: 0 0 0 25px; }
+    .list-commentary ul .commentary-box__photo {
+      width: 17px;
+      height: 17px;
+      min-width: 17px; }
+    .list-commentary ul .commentary-box__body {
+      padding: 0 0 0 24px; }
+  .list-commentary li {
+    position: relative; }
+    .list-commentary li:before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      background: #E3E3E3;
+      height: calc(100% - 40px);
+      top: 40px;
+      left: 12.5px; }
+    .list-commentary li ul li:before {
+      left: 8px;
+      top: 24px;
+      height: calc(100% - 24px); }
+
+.commentary-box {
+  width: 100%;
+  font-size: 14px;
+  margin: 0 0 16px; }
+
+.commentary-box__head {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 8px;
+  letter-spacing: -0.06em; }
+
+.commentary-box__name {
+  margin: 0 16px 0 6px;
+  color: #F1A431; }
+
+.commentary-box__date {
+  color: rgba(136, 136, 136, 0.6); }
+
+.commentary-box__photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 33px;
+  height: 33px;
+  min-width: 33px; }
+  .commentary-box__photo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.commentary-box__body {
+  padding: 0 0 0 40px; }
+  .commentary-box__body .box-text {
+    color: #434343;
+    font-size: 16px;
+    width: 100%; }
+
+.commentary-box__footer {
+  margin: 16px 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.links-entrance {
+  margin: 0 0 0 65px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -2229,7 +2340,23 @@ footer {
     height: 14px;
     min-width: 14px; }
   .nav-item-language {
-    margin: 0 10px 0 auto; } }
+    margin: 0 10px 0 auto; }
+  .form-commentary {
+    width: 100%;
+    margin: 0 0 20px; }
+    .form-commentary label {
+      width: 100%;
+      margin: 0 0 15px; }
+    .form-commentary button {
+      margin: 0 auto; }
+  .commentary-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 @media only screen and (max-width: 480px) {
   .nav-link-lang {
@@ -2300,7 +2427,12 @@ footer {
     .list-social li a {
       width: 24px;
       height: 24px;
-      padding: 5px; } }
+      padding: 5px; }
+  .commentary-box__date {
+    width: 100%;
+    padding: 0 0 0 40px; }
+  .list-commentary ul .commentary-box__date {
+    padding: 0 0 0 24px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {

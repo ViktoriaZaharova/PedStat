@@ -189,13 +189,13 @@
   display: flex
   align-items: center
   flex-wrap: wrap
+  justify-content: space-between
   width: calc(100% - 72px)
+  margin: 0 auto 0 0
   label
-    max-width: 525px
-    width: 100%
+    width: calc(100% - 164px)
   button
     height: 40px
-    margin: 0 0 0 12px
     max-width: 152px
     width: 100%
 
@@ -273,5 +273,101 @@
     align-items: center
     justify-content: center
 
+.rating-commentary
+  flex-direction: row
+  .rating-val
+    margin: 0 10px
+
+.list-commentary
+  width: 100%
+  > li
+    margin: 0 0 24px
+
+    &:last-child
+      margin: 0
+      &:before
+        display: none
+  .list-commentary-item
+    width: 100%
+  ul
+    padding: 0 0 0 25px
+    .commentary-box__photo
+      width: 17px
+      height: 17px
+      min-width: 17px
+    .commentary-box__body
+      padding: 0 0 0 24px
+  li
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 1px
+      background: #E3E3E3
+      height: calc(100% - 40px)
+      top: 40px
+      left: 12.5px
+    ul
+      li
+        &:before
+          left: 8px
+          top: 24px
+          height: calc(100% - 24px)
+
+
+.commentary-box
+  width: 100%
+  font-size: 14px
+  margin: 0 0 16px
+
+.commentary-box__head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 8px
+  letter-spacing: -0.06em
+
+
+.commentary-box__name
+  margin: 0 16px 0 6px
+  color: $accent
+
+
+.commentary-box__date
+  color: rgba(136, 136, 136, 0.6)
+
+
+.commentary-box__photo
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  overflow: hidden
+  width: 33px
+  height: 33px
+  min-width: 33px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+.commentary-box__body
+  padding: 0 0 0 40px
+  .box-text
+    color: #434343
+    font-size: 16px
+    width: 100%
+
+.commentary-box__footer
+  margin: 16px 0 0
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.links-entrance
+  margin: 0 0 0 65px
 
 
