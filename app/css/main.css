@@ -351,6 +351,9 @@ strong {
 .color-accent {
   color: #F1A431; }
 
+.color-red {
+  color: rgba(204, 42, 16, 0.8); }
+
 .info-btn {
   fill: #F1A431;
   width: 18px;
@@ -626,6 +629,7 @@ i {
 .checkbox-toggle {
   width: 51px;
   height: 28px;
+  cursor: pointer;
   position: relative; }
   .checkbox-toggle input {
     display: none; }
@@ -2183,6 +2187,161 @@ footer {
 
 .links-entrance {
   margin: 0 0 0 65px; }
+
+.payment-page .payment-course-item {
+  margin: 0; }
+
+.payment-page .wrapper-content {
+  padding: 24px 15px; }
+
+.number-lessons {
+  margin: 4px auto 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #F1A431;
+  font-weight: 500;
+  font-size: 14px; }
+  .number-lessons p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .number-lessons p:after {
+      content: '';
+      display: inline-block;
+      background: #F1A431;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      margin: 0 8px; }
+    .number-lessons p:last-child:after {
+      display: none; }
+
+.number-participants {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px; }
+
+.amount {
+  width: 100%;
+  margin: 16px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .amount input {
+    width: 68px;
+    border: none;
+      border-radius: 0;
+    padding: 0;
+    text-align: center;
+    height: 42px;
+    color: #434343;
+    font-size: 24px;
+    font-weight: bold; }
+  .amount span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #FFF7EB;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border: 1px solid #FFB74B;
+      border-radius: 50%;
+    position: relative;
+    cursor: pointer; }
+    .amount span:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background: #434343;
+      width: 12px;
+      height: 3px; }
+  .amount .up:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 3px;
+    height: 12px;
+    background: #434343; }
+
+.payment-info {
+  padding: 30px 0 0; }
+
+.list-checked {
+  margin: 0 0 24px; }
+  .list-checked li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 17px; }
+    .list-checked li:before {
+      content: '';
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      min-width: 34px;
+      margin: 0 12px 0 0;
+      background: url("../img/checked.svg") no-repeat center;
+        background-size: contain; }
+
+.sales-payment {
+  width: 100%;
+  background: #FFF7EB;
+  border: 1px solid #FFB74B;
+    border-radius: 10px;
+  padding: 16px 17px;
+  color: #737373;
+  font-size: 14px; }
+  .sales-payment p {
+    margin: 0 0 5px; }
+    .sales-payment p:last-child {
+      margin: 0; }
+    .sales-payment p span {
+      font-weight: 500; }
+    .sales-payment p .star-decor {
+      font-weight: normal; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
