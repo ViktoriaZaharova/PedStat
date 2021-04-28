@@ -22,6 +22,10 @@
     li
       margin-left: 20px
 
+  .btn-tooltip
+    max-width: 140px
+    margin: 0 0 0 10px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .footer-wrapper
@@ -199,6 +203,19 @@
     flex-direction: column
     align-items: center
 
+  .add-participant-item
+    flex-wrap: wrap
+    label
+      width: calc(100% - 60px)
+
+  .btn-add
+    margin: 0 0 0 auto
+
+  .btn-tooltip
+    max-width: 100%
+    margin: 10px 0 0
+
+
 @media only screen and (max-width: 480px)
   .nav-link-lang
     font-size: 12px
@@ -300,6 +317,13 @@
     .commentary-box__date
       padding: 0 0 0 24px
 
+  .nav-tabs
+    flex-direction: column
+    align-items: center
+    border-radius: 20px
+    margin: 40px 0 20px
+    li
+      width: 100%
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
