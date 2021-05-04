@@ -52,6 +52,267 @@
     width: 100%
     height: 45px
     border-radius: 10px
+    margin: 0 0 40px
 
 .btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child)
   border-radius: 10px
+
+
+
+.salary-page-wrapper
+  width: 100%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  padding: 0 30px
+  .box-text
+    max-width: 450px
+    width: 100%
+    margin: 24px 0 0
+    position: relative
+    z-index: 1
+
+  .btn-group
+    margin: 50px 0 60px
+    justify-content: space-between
+    .btn
+      height: 46px
+      border-radius: 30px
+      max-width: none
+      padding: 0 32px
+      width: fit-content
+      margin: 0 12px 40px 0
+  .btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:not(:first-child)
+    border-radius: 30px
+  .text
+    max-width: 392px
+    width: 100%
+    position: relative
+    &:after, &:before
+      content: ''
+      position: absolute
+      border-radius: 50%
+    &:after
+      background: #FFF7EB
+      width: 36px
+      height: 36px
+      bottom: -30px
+      left: -25px
+    &:before
+      width: 37px
+      height: 37px
+      border: 8px solid #FFECCF
+      top: -70px
+      right: 20px
+
+
+.salary-page-img
+  position: absolute
+  right: 20px
+  top: -28px
+  max-width: 200px
+  width: 100%
+  &:after, &:before
+    content: ''
+    position: absolute
+    border-radius: 50%
+  &:after
+    background: #FFECCF
+    width: 15px
+    height: 15px
+    top: 38px
+    right: 0
+  &:before
+    background: url("../img/circle-decor1.svg") no-repeat center
+      size: contain
+    width: 64px
+    height: 64px
+    bottom: 20px
+    left: -90px
+
+
+.calculate-section
+  h2
+    font-size: 24px
+    text-align: center
+  .box-text
+    text-align: center
+    margin: 10px auto 46px
+
+.form-calculate
+  width: 100%
+  .card
+    &:last-child
+      margin: 0
+      .card-body
+        padding-bottom: 0
+  .btn-group
+    margin: 48px 0 0
+    width: 100%
+    justify-content: center
+    .btn
+      margin: 0 16px 20px 0
+      max-width: 233px
+      &:last-child
+        margin-right: 0
+  .form-group
+    display: flex
+    align-items: flex-start
+    justify-content: flex-end
+    flex-wrap: wrap
+    padding: 0 80px 0 0
+    label
+      max-width: 387px
+      width: 100%
+      position: relative
+      font-size: 14px
+      .input-icon
+        position: absolute
+        width: 16px
+        height: 16px
+        right: 10px
+        top: 9px
+    .input-text
+      font-size: 14px
+      font-weight: 500
+      letter-spacing: -0.01em
+      margin: 5px 7px 0 0
+      sup
+        color: #FF5B26
+    select, input
+      border-radius: 5px
+      padding: 0 16px
+      border: 1px solid #C4C4C4
+      &::placeholder
+        color: #C4C4C4
+      &:hover
+        box-shadow: 0px 0px 10px rgba(11, 167, 255, 0.2)
+        border: 1px solid rgba(11, 167, 255, 0.5)
+    select
+      background: #fff url("../img/arrow-select.svg") no-repeat 95% center
+        size: 6px
+      color: #C4C4C4
+    .input-error
+      .error-text
+        position: absolute
+        left: 0
+        top: 40px
+      .input-icon
+        fill: #FF5B26
+      input
+        box-shadow: 0px 0px 10px rgba(255, 91, 38, 0.2)
+        border: 1px solid #FF5B26
+    .input-validate
+      .input-icon
+        fill: #2DDC5E
+      input
+        border: 1px solid #2DDC5E
+  .form-group-top
+    .input-text
+      margin: 23px 7px 0 0
+  .form-group-checkbox
+    padding: 0
+    label
+      max-width: 470px
+
+
+.form-group
+  margin: 0 0 24px
+  &:last-child
+    margin: 0
+
+
+.error-text
+  color: #FF5B26
+  font-size: 10px
+  font-weight: 500
+  padding: 4px 0 0 10px
+  display: block
+
+.input-error
+  .input-icon
+    fill: #FF5B26
+  input
+    box-shadow: 0px 0px 10px rgba(255, 91, 38, 0.2)
+    border: 1px solid #FF5B26
+
+.input-validate
+  .input-icon
+    fill: #2DDC5E
+  input
+    border: 1px solid #2DDC5E
+
+.input-subtext
+  font-size: 14px
+  display: block
+  margin: 7px 0 0
+
+.input-subtext-top
+  margin: 0 0 7px
+
+.form-group-top
+  .input-text
+    margin: 23px 7px 0 0
+
+
+.card
+  margin: 0 0 16px
+  border: none
+    radius: 0
+  padding: 0
+
+.card-header
+  padding: 0
+  border: none
+  font-size: 18px
+  font-weight: 500
+  color: #FFB74B
+  background: transparent
+  .btn
+    cursor: pointer
+    padding: 15px 30px
+    color: #fff
+    font-size: 18px
+    font-weight: 500
+    width: 100%
+    border: none
+      radius: 30px
+    text-align: left
+    justify-content: flex-start
+    align-items: center
+    background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+    text-decoration: none
+    .svg-icon
+      fill: #fff
+    .card-header-icon
+      transform: rotate(90deg)
+  &:hover, &:focus
+    background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+    .btn
+      color: #fff
+      text-decoration: none
+  &:first-child
+    border-radius: 30px
+  .collapsed
+    background: transparent
+    border: 1px solid #FFB74B
+    color: #FFB74B
+    .svg-icon
+      fill: $accent
+    .card-header-icon
+      transform: rotate(0deg)
+
+
+.card-header-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 0 auto
+  width: 12px
+  height: 20px
+
+.card-body
+  padding: 48px 20px
+

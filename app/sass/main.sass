@@ -110,6 +110,7 @@ input, textarea, select
   color: #000
   height: 40px
   font-size: 12px
+
   &::placeholder
     color: rgba(67, 67, 67, 0.5)
 
@@ -133,6 +134,7 @@ label
   font-size: 16px
   line-height: normal
   width: fit-content
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -146,9 +148,11 @@ label
 .btn-accent
   background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
   color: #fff
+
   &:hover
     background: linear-gradient(180deg, #FFA825 0%, rgba(255, 183, 75, 0.6) 100%)
     color: #fff
+
   .btn-icon
     width: 15px
     height: 15px
@@ -157,6 +161,7 @@ label
 .btn-border
   border: 1px solid #FFB74B
   color: #FFB74B
+
   &:hover
     background: #FFB74B
     color: #fff
@@ -170,6 +175,7 @@ button
   padding: 0
   border: none
     radius: 0
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -207,12 +213,13 @@ button
   min-width: 151px
   margin: 10px auto 0
   border: none
+
   &:before
     content: ''
     position: absolute
     top: -7px
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     width: 0
     height: 0
     border-bottom: 7px solid #fff
@@ -226,6 +233,7 @@ button
   padding: 5px 6px
   color: #5B5B5B
   font-size: 14px
+
   &:hover
     background: rgba(196, 196, 196, 0.12)
     color: #5B5B5B
@@ -255,6 +263,7 @@ button
   justify-content: center
   border-radius: 4px
   overflow: hidden
+
   img
     width: 100%
     height: 100%
@@ -269,10 +278,13 @@ button
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     margin: 0 10px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 40px
       height: 40px
@@ -283,6 +295,7 @@ button
       padding: 7px
       background: #fff
       border-radius: 50%
+
       &:hover
         fill: $grey
 
@@ -294,6 +307,7 @@ strong
   display: inline-flex
   align-items: center
   font-weight: 500
+
   img
     width: 18px
     margin: 0 0 0 3px
@@ -402,7 +416,6 @@ i
   padding: 59px 15px 16px
 
 
-
 //mobile-menu
 .mobile-menu
   position: fixed
@@ -415,10 +428,12 @@ i
   background: #fff
   box-shadow: -4px 0 4px rgba(204, 163, 101, 0.1)
   overflow-y: auto
-  
+
   display: none
+
   .logo
     margin: 0 auto
+
   .menu
     margin: 20px 0
     padding: 0
@@ -428,8 +443,10 @@ i
     background: transparent
     box-shadow: none
     font-size: 16px
+
     li
       margin: 0 0 15px
+
   .sidebar-menu
     margin: 10px 0 0
 
@@ -440,12 +457,13 @@ i
   align-items: center
   justify-content: space-between
   background: #FFF7EB
+
   .info-user__head
     margin: 0
     font-weight: normal
     font-size: 14px
 
-    
+
 .mobile-menu__body
   width: 100%
   background: #fff
@@ -455,8 +473,10 @@ i
 .cabinet-menu
   padding: 0 0 20px
   border-bottom: 1px solid $accent
+
   .list-info-characteristics
     margin: 0 0 15px
+
     li
       justify-content: space-between
 
@@ -469,6 +489,7 @@ i
   display: flex
   align-items: center
   color: #5B5B5B
+
   &:after
     content: ''
     margin: 0 0 0 auto
@@ -485,6 +506,7 @@ i
   right: 35px
   top: 10px
   cursor: pointer
+
   &:before, &:after
     content: ''
     position: absolute
@@ -493,8 +515,10 @@ i
     width: 2px
     height: 100%
     background: $accent
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -512,7 +536,7 @@ i
   border-radius: 10px
   min-width: 280px
   text-align: left
-  
+
 .tooltip
   &.bs-tooltip-auto[x-placement^=left] .arrow::before, &.bs-tooltip-left .arrow::before,
   &.bs-tooltip-auto[x-placement^=top] .arrow::before, &.bs-tooltip-top .arrow::before,
@@ -532,19 +556,21 @@ i
   font-size: 14px
   color: #434343
   display: inline-block
+
   a
     color: $accent
     display: inline-block
+
     &:after
       content: '/'
       display: inline-block
       color: #434343
       margin: 0 5px
 
-.breadcrumb-item+.breadcrumb-item::before
+.breadcrumb-item + .breadcrumb-item::before
   display: none
 
-.breadcrumb-item+.breadcrumb-item
+.breadcrumb-item + .breadcrumb-item
   padding: 0
 
 .checkbox-toggle
@@ -552,11 +578,14 @@ i
   height: 28px
   cursor: pointer
   position: relative
+
   input
     display: none
+
     &:checked + .checkbox-toggle__default
       &:before
         background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+
       &:after
         left: auto
         right: 4px
@@ -565,6 +594,7 @@ i
   position: absolute
   width: 100%
   height: 100%
+
   &:before
     content: ''
     position: absolute
@@ -575,12 +605,13 @@ i
     background: linear-gradient(180deg, rgba(222, 222, 222, 0.6) 0%, #C4C4C4 100%)
     border-radius: 20px
     transition: .3s ease
+
   &:after
     content: ''
     position: absolute
     top: 50%
     left: 4px
-    transform: translate(0,-50%)
+    transform: translate(0, -50%)
     background: #fff
     border-radius: 50%
     width: 20px
@@ -592,6 +623,7 @@ i
   margin: -108px 0 40px
   background: $accent
   color: #fff
+
   .banner-name
     padding: 180px 0 140px
 
@@ -600,12 +632,15 @@ i
 
 .list-dots
   letter-spacing: -0.005em
+
   li
     position: relative
     padding: 0 0 0 14px
     margin: 0 0 8px
+
     &:last-child
       margin: 0
+
     &:before
       content: ''
       position: absolute
@@ -616,7 +651,45 @@ i
       height: 6px
       border-radius: 50%
 
+.checkbox
+  width: 100%
+  display: flex
+  align-items: center
+  position: relative
+  margin: 10px 0 0
+  letter-spacing: -0.01em
+  font-size: 14px
+  font-weight: 500
+  cursor: pointer
+  padding: 0 0 0 10px
 
+.checkbox-inp
+  display: none
+
+.checkbox-custom
+  width: 13px
+  height: 13px
+  min-width: 13px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 8px 0 0
+  border: 1px solid #C4C4C4
+    radius: 2px
+  position: relative
+
+.checkbox-inp:checked + .checkbox-custom
+  background: #0670AC
+  border-color: #0670AC
+  &:before
+    content: ''
+    position: absolute
+    left: 2px
+    top: 2.5px
+    width: 7px
+    height: 6px
+    background: url("../img/checkbox-white.svg") no-repeat center
+      size: 100%
 
 @import "header"
 @import "footer"
