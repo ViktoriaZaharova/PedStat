@@ -1972,7 +1972,7 @@ footer {
 
 .question-answer {
   width: 100%;
-  margin: 36px 0 0; }
+  margin: 36px 0 120px; }
   .question-answer h2 {
     text-align: center;
     margin: 0 auto 24px;
@@ -3908,7 +3908,9 @@ footer {
   .card-header__name {
     width: calc(100% - 35px);
     padding: 0 0 0 10px;
-    font-size: 15px; } }
+    font-size: 15px; }
+  .question-answer {
+    margin: 36px 0 50px; } }
 
 @media only screen and (max-width: 480px) {
   .nav-link-lang {
