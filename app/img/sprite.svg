@@ -65,6 +65,17 @@
         <path d="M8 8L0.5 15.7942L0.5 0.205771L8 8Z"/>
     </symbol>
 
+    <symbol id="arrow-right4" viewBox="0 0 11 17">
+        <rect x="7.91992" y="10.335" width="10.983" height="3" rx="1.5" transform="rotate(-135 7.91992 10.335)"/>
+        <rect x="9.8877" y="9.12131" width="10.983" height="3" rx="1.5" transform="rotate(135 9.8877 9.12131)"/>
+    </symbol>
+
+
+    <symbol id="arrow-left" viewBox="0 0 11 17">
+        <rect x="2.12109" y="6.55246" width="10.983" height="3" rx="1.5" transform="rotate(45 2.12109 6.55246)"/>
+        <rect x="0.15332" y="7.76614" width="10.983" height="3" rx="1.5" transform="rotate(-45 0.15332 7.76614)"/>
+    </symbol>
+
 
     <symbol id="chat" viewBox="0 0 26 24">
         <path d="M4.33177 10.0348H9.9651C10.2047 10.0348 10.3984 9.8407 10.3984 9.6015C10.3984 9.3623 10.2047 9.16817 9.9651 9.16817H4.33177C4.09214 9.16817 3.89844 9.3623 3.89844 9.6015C3.89844 9.8407 4.09214 10.0348 4.33177 10.0348Z"/>
