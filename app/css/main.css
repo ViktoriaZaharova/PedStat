@@ -3224,6 +3224,118 @@ footer {
   border: 1px solid #FF5136;
   pointer-events: none; }
 
+.page-content-100 {
+  background: #ffff;
+  padding: 24px 30px 65px;
+  -webkit-box-shadow: 0px 4px 4px rgba(204, 163, 101, 0.05);
+          box-shadow: 0px 4px 4px rgba(204, 163, 101, 0.05);
+  border-radius: 10px; }
+
+.list-result-answer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #434343;
+  font-size: 18px;
+  font-weight: 500; }
+  .list-result-answer li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 42px 10px 0; }
+    .list-result-answer li:last-child {
+      margin-right: 0; }
+
+.correct-answer__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin: 0 6px 0 0;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  fill: #fff;
+  padding: 7px; }
+
+.correct-answer .correct-answer__icon {
+  fill: none;
+  stroke: #fff; }
+
+.table {
+  width: 100%;
+  margin: 22px 0 0;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  color: #434343;
+  background: #fff; }
+  .table .list-result-answer {
+    font-weight: normal;
+    font-size: 16px; }
+  .table h4 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: bold; }
+
+.table-head {
+  font-size: 18px;
+  font-weight: bold; }
+
+.table-body .tr:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px; }
+
+.table-body .td {
+  padding: 18px 0; }
+
+.positive-response {
+  background: rgba(45, 220, 94, 0.05); }
+  .positive-response:before {
+    background: #2DDC5E; }
+
+.negative-response {
+  background: rgba(255, 91, 38, 0.05); }
+  .negative-response:before {
+    background: #FF5B26; }
+
+.td {
+  padding: 16px 0; }
+
+.tr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  position: relative; }
+
+.td-number {
+  min-width: 86px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -3464,7 +3576,13 @@ footer {
     font-size: 16px;
     padding: 15px 24px; }
   .card-body {
-    padding: 20px 10px; } }
+    padding: 20px 10px; }
+  .table h4 {
+    font-size: 16px; }
+  .td-number {
+    min-width: 60px; }
+  .page-content-100 {
+    padding: 20px 25px; } }
 
 @media only screen and (max-width: 480px) {
   .nav-link-lang {
@@ -3569,4 +3687,6 @@ footer {
   .card-article__img {
     height: 160px; }
   .pedcoin-item {
-    padding: 30px 20px; } }
+    padding: 30px 20px; }
+  .list-result-answer {
+    font-size: 15px; } }
