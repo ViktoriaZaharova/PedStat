@@ -241,7 +241,17 @@
   </div>
 </header>
 
-<div class="wrapper">
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="banner-name">Баннер</h2>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="wrapper olympiad-page olympiades">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3 d-none d-lg-block">
@@ -258,7 +268,7 @@
                 <li>
                   <p>PedCoin: <strong class="color-accent balance-val">670 <img src="img/badge.svg" alt=""></strong>
                   </p>
-                  <a href="#" class="info-btn">
+                  <a href="#" class="info-btn" title="Tooltip on right" data-toggle="tooltip" data-placement="bottom">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#info"></use>
                     </svg>
@@ -329,47 +339,134 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h1>Список страниц</h1>
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                  <div class="breadcrumb">
+                    <a href="index.html" class="breadcrumb-item">Басты бет</a>
+                    <a href="index.html" class="breadcrumb-item">Пробный</a>
+                    <span>Тест тапсыру</span>
+                  </div>
+                </nav>
               </div>
-            </div>
-
-            <div class="row">
               <div class="col-12">
-                <ul class="list-number">
-                  <li><a href="news.html">Жаңалықтар</a></li>
-                  <li><a href="forum.html">Форум</a></li>
-                  <li><a href="forum2.html">Форум 2</a></li>
-                  <li><a href="ped-coin.html">PedCoin</a></li>
-                  <li><a href="pay-course.html">Оплата курса</a></li>
-                  <li><a href="courses.html">Курсы</a></li>
-                  <li><a href="webinars.html">Вебинары</a></li>
-                  <li><a href="webinar-page.html">Вебинар туралы</a></li>
-                  <li><a href="articles.html">Мақалалар</a></li>
-                  <li><a href="my-courses.html">Мои курсы</a></li>
-                  <li><a href="my-payment.html">Оплата</a></li>
-                  <li><a href="my-participant.html">Қатысушы қосу</a></li>
-                  <li><a href="my-participant2.html">Қатысушы қосу 2</a></li>
-                  <li><a href="result-calculate.html">Rezultaty Calculyatora</a></li>
-                  <li><a href="online-salary.html">Online Zarplata</a></li>
-                  <li><a href="passage-olympiad.html">Прохождение олимпиады</a></li>
-                  <li><a href="unanswered-question.html">Неотвеченнный вопрос</a></li>
-                  <li><a href="passing-tournament.html">Прохождение турнира</a></li>
-                  <li><a href="dealing-errors.html">Қатемен жұмыс</a></li>
-                  <li><a href="course-page.html">Курс</a></li>
-                  <br>
-                  <li><a href="olympiad.html">Олимпиада</a></li>
-                  <li><a href="olympiades.html">Мои олимпиады</a></li>
-                  <li><a href="faq.html">faq</a></li>
-                </ul>
+                <div class="question-answer">
+                  <h2>FAQ</h2>
+
+                  <div class="accordion accordion-question" id="accordionQuestion">
+                    <div class="card card-accordion-question" data-toggle="collapse"
+                         data-target="#collapseQuestionOne" aria-expanded="true"
+                         aria-controls="collapseQuestionOne">
+                      <div class="card-header" id="headingQuestionOne">
+                        <div class="card-accordion-question__text">Зияткерлік олимпиада сұрақтарын құрастыратын
+                          авторларды
+                          қалай таңдайсыздар?
+                        </div>
+                        <div class="card-accordion-question__icon"></div>
+                      </div>
+
+                      <div id="collapseQuestionOne" class="collapse show" aria-labelledby="headingQuestionOne"
+                           data-parent="#accordionQuestion">
+                        <div class="card-body">
+                          <div class="box-text">
+                            <p>Тест сұрақтарын педагогика саласында тәжірибесі бар, біліктілік санаты жоғары
+                              педагог-шебер мен
+                              педагог–зерттеушілер құрастырады.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-accordion-question collapsed" data-toggle="collapse" data-target="#collapseQuestionTwo" aria-expanded="false"
+                         aria-controls="collapseQuestionTwo">
+                      <div class="card-header" id="headingQuestionTwo">
+
+                        <div class="card-accordion-question__text">Зияткерлік олимпиада сұрақтарын құрастыратын авторларды
+                          қалай таңдайсыздар?
+                        </div>
+                        <div class="card-accordion-question__icon"></div>
+                      </div>
+                      <div id="collapseQuestionTwo" class="collapse" aria-labelledby="headingQuestionTwo"
+                           data-parent="#accordionQuestion">
+                        <div class="card-body">
+                          <div class="box-text">
+                            <p>Тест сұрақтарын педагогика саласында тәжірибесі бар, біліктілік санаты жоғары
+                              педагог-шебер мен
+                              педагог–зерттеушілер құрастырады.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-accordion-question collapsed" data-toggle="collapse" data-target="#collapseQuestionThree" aria-expanded="false"
+                         aria-controls="collapseQuestionThree">
+                      <div class="card-header" id="headingQuestionThree">
+                        <div class="card-accordion-question__text">Зияткерлік олимпиада сұрақтарын құрастыратын авторларды
+                          қалай таңдайсыздар?
+                        </div>
+                        <div class="card-accordion-question__icon"></div>
+                      </div>
+                      <div id="collapseQuestionThree" class="collapse" aria-labelledby="headingThree"
+                           data-parent="#accordionQuestion">
+                        <div class="card-body">
+                          <div class="box-text">
+                            <p>Тест сұрақтарын педагогика саласында тәжірибесі бар, біліктілік санаты жоғары
+                              педагог-шебер мен
+                              педагог–зерттеушілер құрастырады.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-accordion-question collapsed" data-toggle="collapse" data-target="#collapseQuestionFour" aria-expanded="false"
+                         aria-controls="collapseQuestionFour">
+                      <div class="card-header" id="headingQuestionFour">
+
+                        <div class="card-accordion-question__text">Зияткерлік олимпиада сұрақтарын құрастыратын авторларды
+                          қалай таңдайсыздар?
+                        </div>
+                        <div class="card-accordion-question__icon"></div>
+                      </div>
+                      <div id="collapseQuestionFour" class="collapse" aria-labelledby="headingQuestionFour"
+                           data-parent="#accordionQuestion">
+                        <div class="card-body">
+                          <div class="box-text">
+                            <p>Тест сұрақтарын педагогика саласында тәжірибесі бар, біліктілік санаты жоғары
+                              педагог-шебер мен
+                              педагог–зерттеушілер құрастырады.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card card-accordion-question collapsed" data-toggle="collapse" data-target="#collapseQuestionFive" aria-expanded="false"
+                         aria-controls="collapseQuestionFive">
+                      <div class="card-header" id="headingQuestionFive">
+
+                        <div class="card-accordion-question__text">Зияткерлік олимпиада сұрақтарын құрастыратын авторларды
+                          қалай таңдайсыздар?
+                        </div>
+                        <div class="card-accordion-question__icon"></div>
+                      </div>
+                      <div id="collapseQuestionFive" class="collapse" aria-labelledby="headingQuestionFive"
+                           data-parent="#accordionQuestion">
+                        <div class="card-body">
+                          <div class="box-text">
+                            <p>Тест сұрақтарын педагогика саласында тәжірибесі бар, біліктілік санаты жоғары
+                              педагог-шебер мен
+                              педагог–зерттеушілер құрастырады.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
 </div>
+
 
 <footer>
   <div class="footer-top">

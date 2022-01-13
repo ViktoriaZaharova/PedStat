@@ -241,7 +241,17 @@
   </div>
 </header>
 
-<div class="wrapper">
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="banner-name">Баннер</h2>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="wrapper olympiad-page">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3 d-none d-lg-block">
@@ -258,7 +268,7 @@
                 <li>
                   <p>PedCoin: <strong class="color-accent balance-val">670 <img src="img/badge.svg" alt=""></strong>
                   </p>
-                  <a href="#" class="info-btn">
+                  <a href="#" class="info-btn" title="Tooltip on right" data-toggle="tooltip" data-placement="bottom">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#info"></use>
                     </svg>
@@ -328,48 +338,220 @@
         <div class="wrapper-content">
           <div class="container">
             <div class="row">
-              <div class="col-12">
-                <h1>Список страниц</h1>
+              <div class="col-12 text-center">
+                <h1>Олимпиада</h1>
+                <div class="box-text">
+                  <p>Lorem Ipsum is simply dummy text Ipsum is simply dummy text </p>
+                </div>
               </div>
             </div>
 
             <div class="row">
               <div class="col-12">
-                <ul class="list-number">
-                  <li><a href="news.html">Жаңалықтар</a></li>
-                  <li><a href="forum.html">Форум</a></li>
-                  <li><a href="forum2.html">Форум 2</a></li>
-                  <li><a href="ped-coin.html">PedCoin</a></li>
-                  <li><a href="pay-course.html">Оплата курса</a></li>
-                  <li><a href="courses.html">Курсы</a></li>
-                  <li><a href="webinars.html">Вебинары</a></li>
-                  <li><a href="webinar-page.html">Вебинар туралы</a></li>
-                  <li><a href="articles.html">Мақалалар</a></li>
-                  <li><a href="my-courses.html">Мои курсы</a></li>
-                  <li><a href="my-payment.html">Оплата</a></li>
-                  <li><a href="my-participant.html">Қатысушы қосу</a></li>
-                  <li><a href="my-participant2.html">Қатысушы қосу 2</a></li>
-                  <li><a href="result-calculate.html">Rezultaty Calculyatora</a></li>
-                  <li><a href="online-salary.html">Online Zarplata</a></li>
-                  <li><a href="passage-olympiad.html">Прохождение олимпиады</a></li>
-                  <li><a href="unanswered-question.html">Неотвеченнный вопрос</a></li>
-                  <li><a href="passing-tournament.html">Прохождение турнира</a></li>
-                  <li><a href="dealing-errors.html">Қатемен жұмыс</a></li>
-                  <li><a href="course-page.html">Курс</a></li>
-                  <br>
-                  <li><a href="olympiad.html">Олимпиада</a></li>
-                  <li><a href="olympiades.html">Мои олимпиады</a></li>
-                  <li><a href="faq.html">faq</a></li>
+                <ul class="nav nav-tabs" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">Халықаралық</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">Республикалық</a>
+                  </li>
                 </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                       aria-labelledby="pills-home-tab">
+
+                    <ul class="nav nav-tabs nav-tabs-sub" id="pills-tab2" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
+                           aria-controls="pills-1" aria-selected="true">Үстаздарға</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2" role="tab"
+                           aria-controls="pills-2" aria-selected="false">Оқушыларға</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-3-tab" data-toggle="pill" href="#pills-3" role="tab"
+                           aria-controls="pills-3" aria-selected="false">Тәрбиешілерге</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-4-tab" data-toggle="pill" href="#pills-4" role="tab"
+                           aria-controls="pills-4" aria-selected="false">Директорларға</a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="pills-5-tab" data-toggle="pill" href="#pills-5" role="tab"
+                           aria-controls="pills-5" aria-selected="false">ТИПО Ұстаздарға</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent2">
+                      <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                           aria-labelledby="pills-1-tab">
+                        <div class="row">
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Математика</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Физика</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Химия</span>
+                            </a>
+                          </div>
+
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Педагогика</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Музыка</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Биология</span>
+                            </a>
+                          </div>
+
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Психология</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">География</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Информатика</span>
+                            </a>
+                          </div>
+
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Педагогика</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Музыка</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Биология</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Психология</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">География</span>
+                            </a>
+                          </div>
+                          <div class="col-12 col-sm-6 col-lg-4 mb-16">
+                            <a href="#" class="olympiad-category">
+                              <span class="olympiad-category__icon"><img src="img/book.svg" alt=""></span>
+                              <span class="olympiad-category__text">Информатика</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-3-tab">
+                        2
+                      </div>
+                      <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                        3
+                      </div>
+                      <div class="tab-pane fade" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                        4
+                      </div>
+                      <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                        5
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    2
+                  </div>
+                </div>
               </div>
             </div>
 
+            <div class="row">
+              <div class="col-12">
+                <div class="about-olympiad">
+
+                  <div class="decor decor1"><img src="img/decor1.svg" alt=""></div>
+                  <div class="decor decor2"></div>
+                  <div class="decor decor3"></div>
+                  <h2>Олимпиада жайлы</h2>
+
+                  <div class="about-olympiad-wrapper">
+                    <ul class="about-olympiad-list">
+                      <li>
+                        <div class="about-olympiad-list__icon"><img src="img/globe.svg" alt=""></div>
+                        <div class="about-olympiad-list__text">Халықаралық және Республикалық
+                          деңгейлер
+                        </div>
+                      </li>
+                      <li>
+                        <div class="about-olympiad-list__icon"><img src="img/badge2.svg" alt=""></div>
+                        <div class="about-olympiad-list__text">Сертификаттар мен дәрежелі
+                          дипломдар
+                        </div>
+                      </li>
+                      <li>
+                        <div class="about-olympiad-list__icon"><img src="img/free.svg" alt=""></div>
+                        <div class="about-olympiad-list__text">Тегін олимпиадалар</div>
+                      </li>
+                    </ul>
+
+                    <div class="about-olympiad-images">
+                      <div class="image image1"><img src="img/diploma2.png" alt=""></div>
+                      <div class="image image2"><img src="img/diploma2.png" alt=""></div>
+                      <div class="image image3"><img src="img/diploma2.png" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
 </div>
+
 
 <footer>
   <div class="footer-top">

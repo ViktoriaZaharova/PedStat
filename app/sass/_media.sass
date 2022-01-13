@@ -88,6 +88,17 @@
   .btn-burger
     display: flex
 
+  .about-olympiad-images
+    padding: 0
+    margin: 0 0 0 auto
+
+  .about-olympiad-list
+    width: 100%
+    margin: 0 0 40px
+    li
+      margin: 0 0 20px
+    &__text
+      max-width: none
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -213,6 +224,11 @@
     width: 100%
     order: 1
 
+  .about-olympiad-images:before
+    right: -25px
+    width: 300px
+    height: 500px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
   header
@@ -321,6 +337,11 @@
 
   .question-answer
     margin: 36px 0 50px
+
+  .about-olympiad-list
+    font-size: 14px
+
+
 
 @media only screen and (max-width: 480px)
   .nav-link-lang
@@ -431,6 +452,21 @@
     li
       width: 100%
 
+  .about-olympiad
+    margin: 40px 0 0
+    padding: 0 0 60px
+
+  .about-olympiad-images:before
+    display: none
+
+  .about-olympiad-images
+    flex-wrap: wrap
+    justify-content: space-between
+    .image
+      width: 32%
+      min-width: auto
+      margin: 0 auto
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
   .webinar-author__box-wrap
@@ -454,4 +490,12 @@
   .list-result-answer
     font-size: 15px
 
+  .about-olympiad-images
+    .image
+      width: 100%
+      margin: 0 auto 10px
+
+  .about-olympiad-list__icon
+    width: 30px
+    min-width: 30px
 
