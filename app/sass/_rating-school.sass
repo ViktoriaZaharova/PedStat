@@ -1,0 +1,169 @@
+@import "vars"
+
+.title-line
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 20px
+  h1
+    width: fit-content
+    margin: 0
+
+.rating-school
+  .dropdown-my
+    margin: 0 0 32px
+  &__img
+    max-width: 413px
+    width: 100%
+    display: flex
+    align-items: center
+    img
+      width: 100%
+
+.dropdown-my
+  width: fit-content
+  .dropdown-toggle
+    border-radius: 0
+    &:after
+      background: url("../img/arrow-right.svg") no-repeat center
+        size: 100%
+      padding: 0
+      width: 16px
+      height: 16px
+  .dropdown-menu
+    width: 100%
+    margin: 0
+    max-width: none
+    border-radius: 0
+    &:before
+      display: none
+    .active
+      background: rgba(196, 196, 196, 0.12)
+    .dropdown-item
+      padding: 6px 10px
+
+.list-rating-school
+  font-size: 16px
+  font-weight: 500
+  padding: 0 0 0 20px
+  li
+    margin: 0 0 14px
+    a
+      color: $accent
+      &:hover
+        color: $grey
+    &::marker
+      color: $accent
+
+.table-rating-school
+  border: 0.5px solid rgba(255, 183, 75, 0.5)
+  background: transparent
+  padding: 0
+  margin: 0
+  box-shadow: none
+  border-radius: 0
+  font-size: 14px
+  font-weight: 500
+  .td, .th
+    padding: 11px 12px
+    &:first-child
+      width: 5%
+    &:nth-child(2)
+      width: 81%
+    &:last-child
+      width: 14%
+      text-align: right
+  .thead
+    background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+    color: #fff
+    letter-spacing: -0.02em
+    font-size: 14px
+    font-weight: 500
+  h4
+    margin: 0
+    font-size: 14px
+  .tbody
+    .tr
+      &:nth-child(odd)
+        background: #FFF9F0
+
+.table-rating-school__address
+  a
+    color: #C4C4C4
+    font-weight: normal
+    letter-spacing: -0.02em
+    font-size: 12px
+
+.table-rating-school__number
+  font-weight: normal
+
+.tr-first
+  color: $accent
+
+.pagination-wrapper
+  margin: 26px 0 0
+  padding: 22px 0
+  position: relative
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%,0)
+    width: calc(100% + 60px)
+    height: 1px
+    background: #E3E3E3
+
+.pagination-nav
+  margin: 0 auto
+
+.pagination
+  border-radius: 0
+  .page-item
+    margin: 0 6px 0 0
+    &:last-child
+      margin: 0
+  .page-link
+    border: 1px solid #FFB74B
+      radius: 3px
+    background: #FFF7EB
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 38px
+    height: 38px
+    padding: 0
+    min-width: 38px
+    color: #FFB74B
+    font-size: 18px
+    font-weight: bold
+    &:hover
+      background: $accent
+      color: #fff
+  .page-link-dots
+    background: transparent
+    border: none
+
+.page-item:first-child .page-link
+  border-radius: 3px
+
+.page-item.active .page-link
+  background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+  color: #fff
+  border: none
+
+.links-page
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 94px
+  height: 38px
+  background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+  border-radius: 18px
+  &:hover
+    background: linear-gradient(to top, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)

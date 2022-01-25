@@ -31,6 +31,13 @@
     label
       max-width: 300px
 
+  .form-edit
+    input
+      font-size: 14px
+    .form-group-bottom
+      margin: 20px 0 0
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
   .footer-wrapper
@@ -228,6 +235,44 @@
     right: -25px
     width: 300px
     height: 500px
+    
+  .change-password-links
+    margin: 10px 0 0
+    text-align: left
+
+  .your-reward
+    &__content
+      width: 100%
+      padding: 0
+    &__img
+      margin: 20px auto 0
+
+  .top-up-balance .button-group
+    justify-content: center
+    .btn
+      width: 100%
+      margin: 0 auto 10px
+      max-width: none
+    .links-grey
+      margin: 0
+      text-align: right
+
+  .results-of-olympics
+    padding: 30px
+
+  .results-of-olympics-box
+    width: 100%
+    margin: 0 auto 20px
+    text-align: center
+
+  .table-rating-school .td:last-child, .table-rating-school .th:last-child
+    width: 30%
+
+  .table-rating-school .td:first-child, .table-rating-school .th:first-child
+    width: 10%
+
+  .table-rating-school .td:nth-child(2), .table-rating-school .th:nth-child(2)
+    width: 60%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -341,7 +386,37 @@
   .about-olympiad-list
     font-size: 14px
 
+  .nav-tabs-sub
+    flex-wrap: nowrap
+    overflow-x: auto
+    .nav-link
+      white-space: nowrap
 
+  .notification-dropdown .dropdown-menu
+    min-width: 250px
+
+  .form-edit-content
+    padding: 0
+    width: 100%
+    margin: 20px 0 0
+
+  .avatar-img
+    margin: 0 auto
+
+  .form-edit .input-text
+    margin: 0 0 5px
+
+  .links-page
+    width: 70px
+
+  .table-rating-school h4
+    font-size: 14px
+
+  .pagination .page-link
+    width: 30px
+    height: 38px
+    min-width: 30px
+    font-size: 14px
 
 @media only screen and (max-width: 480px)
   .nav-link-lang
@@ -467,6 +542,19 @@
       min-width: auto
       margin: 0 auto
 
+  .nav-tabs-sub
+    flex-direction: row
+
+    .nav-item
+      width: fit-content
+
+  .links-page
+    display: none
+
+  .pagination .page-link
+    width: 38px
+    min-width: 38px
+
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px)
   .webinar-author__box-wrap
@@ -499,3 +587,12 @@
     width: 30px
     min-width: 30px
 
+  .notification-dropdown
+    margin: 0 10px 0 auto
+    .dropdown-menu
+      min-width: 200px
+      left: 0 !important
+      transform: translate3d(0, 24px, 0px) !important
+
+  .logo
+    max-width: 50px

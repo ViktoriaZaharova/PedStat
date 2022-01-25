@@ -158,6 +158,65 @@
         </div>
         <div class="col-9 d-flex flex-wrap align-items-center">
 
+          <div class="dropdown notification-dropdown">
+            <a href="#" class="notification dropdown-toggle" id="notificationDropdown" role="button"
+               data-toggle="dropdown"
+               aria-haspopup="true" aria-expanded="false">
+              <span class="notification-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#notification"></use></svg></span>
+              <span class="notification-text">Уведомления</span>
+              <span class="notification-val color-accent">(3)</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="notificationDropdown">
+              <ul class="list-notification">
+                <li>
+                  <div class="list-notification-item">
+                    <div class="list-notification-item__head">
+                      <div class="bonus-val color-accent">+5</div>
+                      <div class="bonus-img"><img src="img/badge.svg" alt=""></div>
+                      <h3>PedCoin</h3>
+                    </div>
+                    <div class="list-notification-item__body">
+                      <div class="box-text">
+                        <p>Форумда танытқан белсенділік үшін</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-notification-item">
+                    <div class="list-notification-item__head">
+                      <div class="bonus-val color-accent">+5</div>
+                      <div class="bonus-img"><img src="img/badge.svg" alt=""></div>
+                      <h3>PedCoin</h3>
+                    </div>
+                    <div class="list-notification-item__body">
+                      <div class="box-text">
+                        <p>Форумда танытқан белсенділік үшін</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-notification-item">
+                    <div class="list-notification-item__head">
+                      <div class="bonus-val color-accent">+5</div>
+                      <div class="bonus-img"><img src="img/badge.svg" alt=""></div>
+                      <h3>PedCoin</h3>
+                    </div>
+                    <div class="list-notification-item__body">
+                      <div class="box-text">
+                        <p>Форумда танытқан белсенділік үшін</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <a href="#" class="links-toggle color-accent">Бәрін көру</a>
+            </div>
+          </div>
+
           <div class="nav-item nav-item-language dropdown">
             <a class="nav-link nav-link-lang dropdown-toggle" href="#" id="languageDropdown" role="button"
                data-toggle="dropdown"
@@ -241,7 +300,17 @@
   </div>
 </header>
 
-<div class="wrapper">
+<main class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="banner-name">Баннер</h2>
+      </div>
+    </div>
+  </div>
+</main>
+
+<div class="wrapper olympiad-page olympiades top-up-balance">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3 d-none d-lg-block">
@@ -258,7 +327,7 @@
                 <li>
                   <p>PedCoin: <strong class="color-accent balance-val">670 <img src="img/badge.svg" alt=""></strong>
                   </p>
-                  <a href="#" class="info-btn">
+                  <a href="#" class="info-btn" title="Tooltip on right" data-toggle="tooltip" data-placement="bottom">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#info"></use>
                     </svg>
@@ -329,52 +398,68 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h1>Список страниц</h1>
+                <h1>Баланс толтыру</h1>
               </div>
-            </div>
-
-            <div class="row">
               <div class="col-12">
-                <ul class="list-number">
-                  <li><a href="news.html">Жаңалықтар</a></li>
-                  <li><a href="forum.html">Форум</a></li>
-                  <li><a href="forum2.html">Форум 2</a></li>
-                  <li><a href="ped-coin.html">PedCoin</a></li>
-                  <li><a href="pay-course.html">Оплата курса</a></li>
-                  <li><a href="courses.html">Курсы</a></li>
-                  <li><a href="webinars.html">Вебинары</a></li>
-                  <li><a href="webinar-page.html">Вебинар туралы</a></li>
-                  <li><a href="articles.html">Мақалалар</a></li>
-                  <li><a href="my-courses.html">Мои курсы</a></li>
-                  <li><a href="my-payment.html">Оплата</a></li>
-                  <li><a href="my-participant.html">Қатысушы қосу</a></li>
-                  <li><a href="my-participant2.html">Қатысушы қосу 2</a></li>
-                  <li><a href="result-calculate.html">Rezultaty Calculyatora</a></li>
-                  <li><a href="online-salary.html">Online Zarplata</a></li>
-                  <li><a href="passage-olympiad.html">Прохождение олимпиады</a></li>
-                  <li><a href="unanswered-question.html">Неотвеченнный вопрос</a></li>
-                  <li><a href="passing-tournament.html">Прохождение турнира</a></li>
-                  <li><a href="dealing-errors.html">Қатемен жұмыс</a></li>
-                  <li><a href="course-page.html">Курс</a></li>
-                  <br>
-                  <li><a href="olympiad.html">Олимпиада</a></li>
-                  <li><a href="olympiades.html">Мои олимпиады</a></li>
-                  <li><a href="faq.html">faq</a></li>
-                  <li><a href="top-up-balance.html">Пополнить баланс</a></li>
-                  <li><a href="edit.html">Редактировать</a></li>
-                  <li><a href="passage-of-olympiad.html">Прохождение олимпиады</a></li>
-                  <li><a href="rating-school.html">Рейтинг школ</a></li>
-                  <li><a href="rating-school-page.html">Рейтинг школ 2</a></li>
+                <ul class="nav nav-tabs nav-tabs-my" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">Kaspi.kz</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">HomeBank</a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="pills-1-tab" data-toggle="pill" href="#pills-1" role="tab"
+                       aria-controls="pills-1" aria-selected="false">WebPay</a>
+                  </li>
                 </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                       aria-labelledby="pills-home-tab">
+
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="box-text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius obcaecati officia possimus velit. Amet consectetur nostrum quae repellendus sequi, sint. Aliquam ea in maxime natus odit officia porro quos?</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="box-text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius obcaecati officia possimus velit. Amet consectetur nostrum quae repellendus sequi, sint. Aliquam ea in maxime natus odit officia porro quos?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="box-text">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius obcaecati officia possimus velit. Amet consectetur nostrum quae repellendus sequi, sint. Aliquam ea in maxime natus odit officia porro quos?</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
 </div>
+
 
 <footer>
   <div class="footer-top">
