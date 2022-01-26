@@ -1,0 +1,251 @@
+@import "vars"
+
+.result-test
+  h1
+    margin: 0 auto
+
+.btn-errors
+  height: 45px
+  margin: 40px auto 0
+
+.result-test-content
+  margin: 0 0 25px
+
+.result-test-time
+  text-align: center
+  margin: 24px auto
+  letter-spacing: -0.03em
+  font-size: 36px
+  font-weight: bold
+  color: $accent
+
+.result-test-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: center
+
+.result-test-info
+  width: 50%
+  display: flex
+  flex-direction: column
+
+
+.result-test-info__text
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  margin: 0 0 30px
+  letter-spacing: -0.03em
+  font-size: 18px
+  font-weight: 500
+  padding: 0 35px 0 0
+
+
+.result-test-info__text-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: none
+  border-radius: 50%
+  width: 24px
+  height: 24px
+  min-width: 24px
+  margin: 0 6px 0 0
+  stroke: #fff
+  padding: 6px
+
+.result-test-info-percent
+  width: 100%
+  margin: auto 0 0
+
+.result-test-info-percent__line
+  width: calc(100% - 0.5px)
+  height: 14px
+  background: #2DDC5E
+
+.result-test-info-percent__val
+  margin: 12px 0 0
+  font-weight: 500
+  letter-spacing: -0.03em
+  color: #2DDC5E
+  font-size: 24px
+
+.result-test-info-check
+  .result-test-info__text-icon
+    background: #2DDC5E
+
+
+.result-test-info-error
+  .result-test-info__text
+    padding: 0 0 0 35px
+    justify-content: flex-start
+
+  .result-test-info-percent__line
+    margin: 0 0 0 auto
+    background: #FF5B26
+  .result-test-info-percent__val
+    text-align: right
+    color: #FF5B26
+  .result-test-info__text-icon
+    background: #FF5B26
+    stroke: none
+    fill: #fff
+
+.user-feedback
+  margin: 50px 0 0
+  h3
+    margin: 0 0 30px
+    font-size: 24px
+    font-weight: bold
+
+.user-feedback-slider
+  padding: 0 30px
+  .slick-arrow
+    stroke: #C4C4C4
+
+.user-feedback-item
+  margin: 20px auto
+  width: calc(100% - 13px)
+  background: #fff
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07)
+  padding: 20px 16px 18px 18px
+  &__head
+    width: 100%
+    display: flex
+    align-items: flex-start
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__name
+    width: calc(100% - 30px)
+    padding: 0 0 0 10px
+    h4
+      color: #434343
+      font-weight: bold
+      font-size: 16px
+      margin: 0 0 6px
+  &__body
+    padding: 15px 0 0
+    .box-text
+      font-size: 14px
+      line-height: 17px
+
+.list-rating
+  display: flex
+  align-items: center
+  li
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 16px
+    height: 18px
+    margin: 0 2px 0 0
+    fill: #FFC121
+    &:last-child
+      margin: 0
+
+.test-trial-two
+  .wrapper-content
+    padding: 22px 15px 10px
+
+.test-trial-img
+  min-width: 472px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: -60px -20px 0 0
+  float: right
+
+.test-trial-content
+  .btn
+    margin: 32px 0 0
+    border-radius: 30px
+    height: 44px
+    max-width: 196px
+    width: 100%
+
+.advantages-test-trial-box
+  text-align: center
+  font-size: 14px
+  h4
+    margin: 8px auto 6px
+    font-weight: 500
+  &__icon
+    width: 46px
+    height: 46px
+    border-radius: 10px
+    padding: 11px
+    margin: 0 auto
+    display: flex
+    align-items: center
+    justify-content: center
+
+.advantages-test-trial
+  margin: 45px 0 40px
+
+.our-main-partner-content
+  h3
+    font-size: 24px
+    font-weight: bold
+    margin: 0 0 19px
+
+.our-main-partner-advantages
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: center
+
+.our-main-partner-advantages__item
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #FFB74B
+  font-size: 14px
+  background: #FFF7EB
+  height: 71px
+  h4
+    font-weight: bold
+    font-size: 30px
+    margin: 0 auto
+  &:nth-child(2)
+    border-radius: 100px 50px 50px 5px
+    width: 173px
+
+    margin: 41px 0 10px 10px
+  &:nth-child(3)
+    border-radius: 50px 5px 100px 50px
+    width: 132px
+    margin: -30px 10px 10px 10px
+  &:nth-child(4)
+    border-radius: 100px 50px 50px 5px
+    width: 136px
+  &:nth-child(5)
+    border-radius: 50px 5px 100px 50px
+    width: 168px
+    margin: -20px auto 0 10px
+
+
+.our-main-partner-logo
+  background: rgba(255, 183, 75, 0.94)
+  border-radius: 70px 120px 5px 70px
+  padding: 0 14px
+  width: 178px
+  height: 78px
+  display: flex
+  align-items: center
+  justify-content: center
+

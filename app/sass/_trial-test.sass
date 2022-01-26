@@ -1,0 +1,106 @@
+@import "vars"
+
+.banner-name
+  font-size: 36px
+  font-weight: bold
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  z-index: 1
+  opacity: 1
+  background: transparent
+  padding: 0
+  width: 30px
+  height: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: none
+    radius: 50%
+  box-shadow: none
+  fill: none
+  stroke: #fff
+  img
+    border-radius: 50%
+
+.slick-prev
+  left: 0
+
+.slick-next
+  right: 0
+
+.slick-dots
+  width: 100%
+  z-index: 0
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  bottom: 0
+  position: relative
+  margin: 8px 0 0
+  li
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    margin: 0 8px 0 0
+    cursor: pointer
+    transition: .3s ease
+    background: #C4C4C4
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: $accent
+
+.home-slider-item
+  min-height: 363px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  padding: 160px 0 140px
+  .banner-name
+    padding: 0
+
+.test-trial-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+
+.test-trial-box
+  max-width: calc(37.5% - 12px)
+  margin: 0 0 30px
+  &:first-child
+    max-width: calc(25% - 12px)
+  .application-box__links
+    font-size: 14px
+    padding: 8px 8px
+    font-weight: 500
+    margin: 0
+  .application-box__links.active
+    background: #FFF7EB
+    border-radius: 5px
+    color: #FFB74B
+
+.test-trial-box-disable
+  .application-box__head
+    background: #E3E3E3
+    color: #fff
+  .application-box__links
+    color: rgba(67, 67, 67, 0.5)
+    font-size: 12px
+    font-style: italic
+    font-weight: normal

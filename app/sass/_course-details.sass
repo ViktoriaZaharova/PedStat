@@ -1,0 +1,104 @@
+@import "vars"
+
+.box-text
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.course-details
+
+  &__content
+    margin: 0 0 40px
+  h1
+    margin: 0 0 12px
+  &__video
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 20px
+    img, iframe
+      width: 100%
+
+.navigation-page
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.navigation-links
+  margin: 0 0 32px
+  font-size: 14px
+  font-weight: 500
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: $accent
+    width: 7px
+    height: 11px
+  &:hover
+    .navigation-links__icon
+      fill: #fff
+
+.navigation-links-prev
+  .navigation-links__icon
+    margin: 0 12px 0 0
+
+.navigation-links-next
+  .navigation-links__icon
+    margin: 0 0 0 12px
+
+.application-box
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07)
+  border-radius: 10px
+  background: #fff
+  width: 100%
+  &__head
+    color: #fff
+    background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+    border-radius: 10px 10px 0px 0px
+    padding: 10px 16px
+    font-size: 14px
+    font-weight: 500
+  &__body
+    width: 100%
+    padding: 10px 16px
+
+.application-box__links
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 19px
+  color: #434343
+  &-icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 7px 0 0
+    width: 24px
+    min-width: 24px
+    height: 24px
+  &:hover
+    color: $accent
+  &:last-child
+    margin: 0
+  &-check
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: none
+    stroke: #fff
+    width: 24px
+    height: 24px
+    border-radius: 50%
+    background: $accent
+    padding: 6px
+    margin: 0 0 0 auto
+
+
+
