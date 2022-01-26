@@ -1,0 +1,143 @@
+@import "vars"
+
+.add-article-page
+  .wrapper-content
+    padding: 24px 15px 100px
+  .title-line
+    position: relative
+
+    h1
+      margin: 0 auto
+
+
+.add-article-form
+  input
+    border: 1px solid rgba(255, 183, 75, 0.55)
+      radius: 5px
+  .input-subtext
+    margin: 0 0 8px
+    font-size: 14px
+    font-weight: 500
+  button
+    margin: 0 auto
+    height: 45px
+    border-radius: 10px
+    max-width: 319px
+    width: 100%
+    font-size: 16px
+
+.label-file
+  padding: 10px
+  width: 100%
+  position: relative
+  height: 149px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  text-align: center
+  background: rgba(255, 247, 235, 0.52)
+  border: 1px dashed #FFB74B
+    radius: 5px
+  letter-spacing: -0.01em
+  font-size: 14px
+  color: rgba(67, 67, 67, 0.5)
+
+.label-file__text
+  max-width: 306px
+  width: 100%
+  margin: 0 auto
+
+.label-file__links
+  margin: 5px auto 0
+  color: #4A93E8
+  text-decoration: underline
+  font-size: 12px
+  letter-spacing: -0.01em
+
+.format-document
+  width: 100%
+  text-align: center
+  margin: 5px auto 0
+  display: block
+
+.input-file
+  display: none
+
+.result-download-file
+  width: 100%
+  margin: 24px 0 42px
+  display: flex
+  align-items: center
+
+.result-download-file__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 51px
+  height: 51px
+
+.result-download-file__text
+  width: calc(100% - 51px)
+  padding: 0 0 0 7px
+  letter-spacing: -0.01em
+  font-size: 14px
+
+.result-download-file__name
+  font-weight: 500
+
+.result-download-file__line
+  width: 100%
+  height: 3px
+  position: relative
+  margin: 7px 0
+  background: rgba(67, 67, 67, 0.2)
+
+.result-download-file__line-bg
+  height: 3px
+  width: 50%
+  background: #FFB74B
+  position: absolute
+  left: 0
+  top: 0
+
+.result-download-file__footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.size-file
+  color: rgba(67, 67, 67, 0.5)
+
+.percent-download
+  text-align: right
+  color: $accent
+
+.attention-box
+  margin: 50px auto 0
+  width: 100%
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07)
+  border: 1px solid #FFB74B
+    radius: 5px
+  background: #FFF7EB
+  padding: 16px 20px 20px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 6px
+    border-radius: 20px 0px 0px 20px
+    background: $accent
+  h4
+    font-size: 14px
+    font-weight: 500
+    color: $accent
+    margin: 0 0 6px
+  .box-text
+    color: rgba(67, 67, 67, 0.8)
+    font-size: 12px

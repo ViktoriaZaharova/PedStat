@@ -242,7 +242,7 @@
   </div>
 </header>
 
-<div class="wrapper">
+<div class="wrapper olympiad-page rating-school add-article-page">
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3 d-none d-lg-block">
@@ -259,7 +259,7 @@
                 <li>
                   <p>PedCoin: <strong class="color-accent balance-val">670 <img src="img/badge.svg" alt=""></strong>
                   </p>
-                  <a href="#" class="info-btn">
+                  <a href="#" class="info-btn" title="Tooltip on right" data-toggle="tooltip" data-placement="bottom">
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#info"></use>
                     </svg>
@@ -330,61 +330,89 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <h1>Список страниц</h1>
+                <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                  <div class="breadcrumb">
+                    <a href="index.html" class="breadcrumb-item">Басты бет</a>
+                    <a href="#" class="breadcrumb-item">Мақалалар</a>
+                    <span>Мақала қосу</span>
+                  </div>
+                </nav>
+
+              </div>
+              <div class="col-12 col-lg-8 offset-lg-2">
+                <div class="title-line">
+                  <h1>Мақала қосу</h1>
+                  <div class="tooltip-wrapper">
+                    <div class="ball-value">+5 <img src="img/badge.svg" alt=""></div>
+                    <div class="tooltip-box">
+                      <p>Сіздің мақала қосқаныңыз үшін
+                        жеңісіңіз</p>
+                      <a href="#" class="links-accent">
+                        <span class="links-accent-text">PedCoin туралы толығырақ</span>
+                        <span class="links-accent-icon"><svg class="svg-icon"><use
+                            xlink:href="img/sprite.svg#arrow-right2"></use></svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-8 offset-lg-2">
+                <form method="post" class="add-article-form">
+                  <div class="form-group">
+                    <span class="input-subtext">Мақаланың аты:</span>
+                    <label>
+                      <input type="text" name="name">
+                    </label>
+                  </div>
+
+                  <div class="form-group">
+                    <span class="input-subtext">Документ:</span>
+                    <label class="label-file">
+                      <input type="file" name="file" class="input-file">
+                      <span class="label-file__text">Мақаланы файл түрінде осында жылжытыңыз немесе</span>
+                      <a href="#" class="label-file__links">дисктан таңдау</a>
+                    </label>
+                    <span class="format-document">docx/pdf форматтары рұқсат етілген</span>
+                  </div>
+
+                  <div class="result-download-file">
+                    <div class="result-download-file__icon"><img src="img/docx.svg" alt=""></div>
+                    <div class="result-download-file__text">
+                      <div class="result-download-file__name">mydocument.docx</div>
+                      <div class="result-download-file__line">
+                        <div class="result-download-file__line-bg"></div>
+                      </div>
+                      <div class="result-download-file__footer">
+                        <div class="size-file">7.8 MB</div>
+                        <div class="percent-download">50% жүктелді</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-accent">Мақала қосу</button>
+                </form>
+
+                <div class="attention-box">
+                  <h4>Ескерту!</h4>
+                  <div class="box-text">
+                    <p>Сайтта жарияланған материалдарға толықтай материал жариялаған автор жауапты. Егер сайтта
+                      өзіңіздің сіздің рұқсатынсыз жарияланған немесе заңсыз жарияланған материалды көрсеңіз
+                      редакцияға кері байланыс арқылы хабарласуыңызға болады.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="col-12">
-                <ul class="list-number">
-                  <li><a href="news.html">Жаңалықтар</a></li>
-                  <li><a href="forum.html">Форум</a></li>
-                  <li><a href="forum2.html">Форум 2</a></li>
-                  <li><a href="ped-coin.html">PedCoin</a></li>
-                  <li><a href="pay-course.html">Оплата курса</a></li>
-                  <li><a href="courses.html">Курсы</a></li>
-                  <li><a href="webinars.html">Вебинары</a></li>
-                  <li><a href="webinar-page.html">Вебинар туралы</a></li>
-                  <li><a href="articles.html">Мақалалар</a></li>
-                  <li><a href="my-courses.html">Мои курсы</a></li>
-                  <li><a href="my-payment.html">Оплата</a></li>
-                  <li><a href="my-participant.html">Қатысушы қосу</a></li>
-                  <li><a href="my-participant2.html">Қатысушы қосу 2</a></li>
-                  <li><a href="result-calculate.html">Rezultaty Calculyatora</a></li>
-                  <li><a href="online-salary.html">Online Zarplata</a></li>
-                  <li><a href="passage-olympiad.html">Прохождение олимпиады</a></li>
-                  <li><a href="unanswered-question.html">Неотвеченнный вопрос</a></li>
-                  <li><a href="passing-tournament.html">Прохождение турнира</a></li>
-                  <li><a href="dealing-errors.html">Қатемен жұмыс</a></li>
-                  <li><a href="course-page.html">Курс</a></li>
-                  <br>
-                  <li><a href="olympiad.html">Олимпиада</a></li>
-                  <li><a href="olympiades.html">Мои олимпиады</a></li>
-                  <li><a href="faq.html">faq</a></li>
-                  <li><a href="top-up-balance.html">Пополнить баланс</a></li>
-                  <li><a href="edit.html">Редактировать</a></li>
-                  <li><a href="passage-of-olympiad.html">Прохождение олимпиады</a></li>
-                  <li><a href="rating-school.html">Рейтинг школ</a></li>
-                  <li><a href="rating-school-page.html">Рейтинг школ 2</a></li>
-                  <li><a href="rating-school2.html">Рейтинг школ 3</a></li>
-                  <li><a href="course-details.html">Курс</a></li>
-                  <li><a href="result-test.html">Результаты пробного теста</a></li>
-                  <li><a href="trial-test.html">Пробный тест</a></li>
-                  <li><a href="trial-test2.html">Пробный тест 2</a></li>
-                  <li><a href="blog.html">Блог и новость</a></li>
-                  <li><a href="add-article.html">Мақала қосу</a></li>
-                  <li><a href="passage-test.html">Прохождение теста курса</a></li>
-                  <li><a href="passage-test2.html">Пробный тест</a></li>
-                </ul>
-              </div>
-            </div>
-
           </div>
         </div>
+
+
       </div>
     </div>
   </div>
 </div>
+
 
 <footer>
   <div class="footer-top">

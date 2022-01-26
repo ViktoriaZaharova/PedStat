@@ -1,0 +1,151 @@
+@import "vars"
+
+.question-stage-v2
+  border: 0.5px solid rgba(117, 117, 117, 0.5)
+    radius: 5px
+  padding: 30px 32px 24px
+  .list-radio
+    li
+      margin: 0 0 8px
+      &:last-child
+        margin: 0
+  .box-text
+    margin: 0 0 16px
+  h3
+    font-style: italic
+    margin: 0 0 8px
+
+.radio-v2
+  background: transparent
+  color: #757575
+  padding: 0
+  border-radius: 0
+
+  .radio-inp
+    display: none
+  .radio-inp:checked
+    background: transparent
+  .radio-inp:checked ~ .label
+    color: #FFB74B
+  .radio-inp:checked + .radio-custom
+    color: #fff
+    border:
+      right: transparent
+      radius: 3px
+    background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+  .radio-custom
+    width: 32px
+    height: 32px
+    min-width: 32px
+    border: none
+      radius: 0
+      right: 0.5px solid rgba(117, 117, 117, 0.5)
+    box-shadow: none
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #757575
+    margin: 0 12px 0 0
+    &:before
+      display: none
+
+.passage-page-sidebar__top
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 18px 0
+  font-size: 24px
+  font-weight: bold
+  color: #fff
+  background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+  border-radius: 20px 20px 0px 0px
+
+.passage-page-sidebar-v2
+  .passage-page-sidebar__head
+    padding: 32px 20px 26px
+  .list-number-question
+    li
+      margin: 0 0 8px
+      a
+        border-radius: 3px
+  .passage-page-sidebar__body
+    padding: 22px
+  .timer
+    width: 100%
+    height: auto
+    min-width: auto
+    text-align: center
+    border: none
+      radius: 0
+    color: $accent
+
+.passage-test-page
+  .passage-page-content
+    width: 100%
+  .title-line
+    .btn-group
+      flex-wrap: nowrap
+      font-style: italic
+      width: fit-content
+      .btn
+        padding: 0 20px
+        white-space: nowrap
+        max-width: none
+        height: 37px
+        font-size: 12px
+        font-weight: 500
+        margin: 0 12px 0 0
+
+.scroll-horizontal
+  width: 100%
+  overflow-x: auto
+  margin: 0 0 30px
+  &::-webkit-scrollbar
+    background: #F5F6F8
+    border-radius: 5px
+    height: 7px
+  &::-webkit-scrollbar-thumb
+    background: #C4C4C4
+    border-radius: 5px
+
+.list-question-test
+  width: 100%
+  display: flex
+  align-items: stretch
+  font-size: 16px
+  font-weight: bold
+  margin: 0 0 15px
+  li
+    width: 39px
+    height: 33px
+    min-width: 39px
+    margin: 0 10px 0 0
+
+.question-test-number
+  width: 100%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #C4C4C4
+  background: #F5F6F8
+  border-radius: 8px
+  &:hover
+    color: $accent
+  .svg-icon
+    fill: none
+    stroke: #fff
+    width: 15px
+    height: 16px
+  &.checked
+    background: linear-gradient(180deg, rgba(255, 183, 75, 0.6) 0%, #FFA825 100%)
+  &.no-checked
+    filter: drop-shadow(0px 4px 10px #E1E1E1)
+    border: 2px solid #FFB74B
+    color: $accent
+
+
+
